@@ -19,7 +19,7 @@ nav .nav-link:active{
 
 
 body {
-  background: linear-gradient(300deg, #ffffff, #7f7f7f, #2e2e2e);
+  background: linear-gradient(300deg, #ffffff, #7f7f7f, #2c2c2c);
   background-size: 500%;
   animation: all 1s ease;
 }
@@ -34,6 +34,6 @@ body {
     transition: 1s ease;
 }
 .tema-claro section div{
-    background-color: #222222;
+    background-color: #585858;
     color: white;
 }

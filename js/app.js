@@ -1,4 +1,7 @@
+function script() {
+    
 
+//navbar
 let body = document.querySelector("body");
 let verificacao_tema_local = localStorage.getItem('tema');
 let btn_tema = document.querySelector("#switch-btn-tema");
@@ -44,3 +47,54 @@ function definir_tema() {
             break;
     }
 }
+
+//redirecionamentos de botões
+
+let indentificador_guia = localStorage.getItem('localizador_guia');
+let main = document.querySelector("#main");
+seletor_guia()
+
+function seletor_guia() {
+indentificador_guia = localStorage.getItem('localizador_guia');
+
+    switch (indentificador_guia) {
+    case "home":
+            main.innerHTML = template.home;
+            
+        break;
+
+    case "guia_aprendizado":
+            main.innerHTML = template.guia_de_aprendizado;
+        break;
+
+    case "gerenciador_treinos":
+            main.innerHTML = template.gerenciador_de_treinos;
+        break;
+
+    default:
+        localStorage.setItem("localizador_guia", "home")
+        indentificador_guia = "home";
+        seletor_guia()
+        break;
+        
+    }
+    
+}
+
+//se clicar no home
+document.querySelector(".home-btn").addEventListener("click", ()=>{
+    localStorage.setItem("localizador_guia", "home")
+    seletor_guia();script()
+})
+
+document.querySelector(".montar-treino-btn").addEventListener("click", ()=>{
+    localStorage.setItem("localizador_guia", "gerenciador_treinos")
+    seletor_guia();script()
+})
+
+document.querySelector(".guia-btn").addEventListener("click", ()=>{
+    localStorage.setItem("localizador_guia", "guia_aprendizado")
+    seletor_guia();script()
+})
+}
+script()
