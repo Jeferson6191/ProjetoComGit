@@ -21,19 +21,27 @@ nav .nav-link:active{
 body {
   background: linear-gradient(300deg, #ffffff, #7f7f7f, #2c2c2c);
   background-size: 500%;
+  height: 1px;
   animation: all 1s ease;
 }
 
 .tema-escuro{
-    background-position: 0% 100%;
+    background-position: 0% 10%;
     transition: 1s ease;
 
 }
 .tema-claro{
     background-position: 100% 50%;
     transition: 1s ease;
+    
 }
-.tema-claro section div{
+
+.tema-claro section li, .tema-claro section ul, .tema-claro section div{
     background-color: #585858;
     color: white;
+    
+}
+
+.tema-claro .card{
+    box-shadow: 0 0 15px gray;
 }

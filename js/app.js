@@ -68,7 +68,7 @@ indentificador_guia = localStorage.getItem('localizador_guia');
         break;
 
     case "gerenciador_treinos":
-            main.innerHTML = template.gerenciador_de_treinos;
+            main.innerHTML += template.gerenciador_de_treinos;
         break;
 
     default:
@@ -98,3 +98,6 @@ document.querySelector(".guia-btn").addEventListener("click", ()=>{
 })
 }
 script()
+
+
+//sistema do guia de atividades fisíca
