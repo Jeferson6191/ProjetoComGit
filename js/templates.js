@@ -12,7 +12,28 @@ let template = {
             </div>
         </section>
     `,
-    gerenciador_de_treinos:`gerenciador de treinos
+    gerenciador_de_treinos:`
+            <section >
+
+            <div class="card mx-auto p-2 m-5" style="width: 80%;">
+            <div class="card-body">
+                <h1 class="card-title">Guia de atividades diarias</h1>
+                <p class="card-text">digite aqui suas atividade que você ira fazer no dia.</p>
+
+                <input type="text" class="form-control" placeholder="Digite sua atividade física aqui ex: " aria-label="atividade-fisica" aria-describedby="basic-addon1" id="atividade-fisica-input">
+
+            </div>
+            <ul class="list-group list-group-flush p-2">
+                <li class="list-group-item">Item *
+                    <div class="position-absolute top-50 end-0 translate-middle-y ">
+                    <button class="btn btn-success " type="button">Concluido</button>
+                     <button class="btn btn-danger" type="button">Excluir</button>
+                     </div>
+                </li>
+            </ul>
+            
+            </div>
+        </section>
     `,
     guia_de_aprendizado:`guia de aprendizado
     `

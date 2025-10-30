@@ -60,15 +60,18 @@ indentificador_guia = localStorage.getItem('localizador_guia');
     switch (indentificador_guia) {
     case "home":
             main.innerHTML = template.home;
+            document.querySelector(".navbar-text").innerHTML= `Guia - <strong>Home</strong>`
             
         break;
 
     case "guia_aprendizado":
             main.innerHTML = template.guia_de_aprendizado;
+            document.querySelector(".navbar-text").innerHTML= `Guia - <strong>Guia de aprendizado</strong>`
         break;
 
     case "gerenciador_treinos":
-            main.innerHTML += template.gerenciador_de_treinos;
+            main.innerHTML = template.gerenciador_de_treinos;
+            document.querySelector(".navbar-text").innerHTML= `Guia - <strong>Gerenciador de treinos</strong>`
         break;
 
     default:
@@ -101,3 +104,4 @@ script()
 
 
 //sistema do guia de atividades fisíca
+
