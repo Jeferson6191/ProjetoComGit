@@ -14,3 +14,20 @@ nav .nav-link:hover{
 nav .nav-link:active{
     background-color: rgb(208, 208, 208);
 }
+
+
+body {
+  background: linear-gradient(300deg, #ffffff, #7f7f7f, #2e2e2e);
+  background-size: 500%;
+  animation: all 1s ease;
+}
+
+.tema-escuro{
+    background-position: 0% 100%;
+    transition: 1s ease;
+
+}
+.tema-claro{
+    background-position: 100% 50%;
+    transition: 1s ease;
+}
