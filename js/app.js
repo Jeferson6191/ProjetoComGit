@@ -173,21 +173,21 @@ botao_envio.addEventListener("click", ()=>{
                 </div>
                      </li>`
     }
-    alert(
-        `   <div>
-                    <button class="btn btn-success" stylezz type="button">Concluido</button>
-                    <button class="btn btn-danger index${String(contagem)}btndelete" type="button">Excluir</button> 
-                </div>
-                     </li>`
-    )
+    // alert(
+    //     `   <div>
+    //                 <button class="btn btn-success" stylezz type="button">Concluido</button>
+    //                 <button class="btn btn-danger index${String(contagem)}btndelete" type="button">Excluir</button> 
+    //             </div>
+    //                  </li>`
+    // )
         
        
         //index0, flexão, assim em diante
         localStorage.setItem(`index${String(contagem)}`, exercicios_agora)
         localStorage.setItem("contagem",contagem)
         contagem = Number(localStorage.getItem("contagem"))
-        alert(typeof(contagem))
-        alert(contagem)
+        // alert(typeof(contagem))
+        // alert(contagem)
         
         indentificar_botões()
      
@@ -202,7 +202,7 @@ botoes.forEach(botao => {
         
         for (let index = 0; index <= contagem; index++) {
             if(botao.classList.contains(`index${String(index)}btndelete`) == true){//sistema de indentificação do botaodelete para deletar seu item
-                alert(`click delete index${String(index)}btndelete`)
+                // alert(`click delete index${String(index)}btndelete`)
                 document.querySelector(`.index${String(index)}`).outerHTML=""
                 localStorage.removeItem(`index${String(index)}`)
 
