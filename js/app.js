@@ -1,6 +1,5 @@
 
 script()
-atividade_fisica()
 function script() {
 
 
@@ -113,27 +112,24 @@ document.querySelector(".guia-btn").addEventListener("click", ()=>{
 //sistema do guia de atividades fisíca
 function atividade_fisica() {
 
-let exercicios = [
-  "Flexões de braço",
-  "Abdominais",
-  "Agachamentos",
-  "Prancha",
-  "Corrida estacionária",
-  "Polichinelos",
-  "Burpees",
-  "Avanço",
-  "Salto com agachamento",
-  "Pular corda"
-];
+// let exercicios = [
+//   "Flexões de braço",
+//   "Abdominais",
+//   "Agachamentos",
+//   "Prancha",
+//   "Corrida estacionária",
+//   "Polichinelos",
+//   "Burpees",
+//   "Avanço",
+//   "Salto com agachamento",
+//   "Pular corda"
+// ];
 
-    
-
-    
- exercicios.forEach((element, index) => {
-  setTimeout(() => {
-    document.querySelector("#atividade-fisica-input").placeholder =`Atividade física: ${element}` ;
-  }, 3000 * index); // muda a cada 3 segundos
-});
+//  exercicios.forEach((element, index) => {
+//   setTimeout(() => {
+//     document.querySelector("#atividade-fisica-input").placeholder =`Atividade física: ${element}` ;
+//   }, 3000 * index); // muda a cada 3 segundos
+// });
 
 let lista_p_inserir = document.querySelector(".list-group");
 
@@ -146,7 +142,7 @@ let exercicios_agora
 let contagem = Number(localStorage.getItem("contagem"))
 
 for (let index = 0; index <= contagem; index++) {
-    if (localStorage.getItem(`index${index}`)) {
+    if (localStorage.getItem(`index${index}`) != null) {
 
         lista_p_inserir.innerHTML+=`
                      <li class="list-group-item d-flex justify-content-between index${String(index)}">${String(localStorage.getItem(`index${index}`))}
