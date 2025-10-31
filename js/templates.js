@@ -24,17 +24,7 @@ let template = {
                 <button class="btn btn-success mt-3" type="button" id="botao_envio">Enviar</button>
             </div>
             <ul class="list-group list-group-flush p-2 ">
-                <li class="list-group-item d-flex justify-content-between">Item *
-                <div>
-                    <button class="btn btn-success" stylezz type="button">Concluido</button>
-                    <button class="btn btn-danger" type="button">Excluir</button> 
-                </div>
-                     </li>
                 
-                
-            
-                     
-               
             </ul>
             
             </div>
