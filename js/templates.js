@@ -20,16 +20,21 @@ let template = {
                 <h1 class="card-title">Guia de atividades diarias</h1>
                 <p class="card-text">digite aqui suas atividade que você ira fazer no dia.</p>
 
-                <input type="text" class="form-control" placeholder="Digite sua atividade física aqui ex: " aria-label="atividade-fisica" aria-describedby="basic-addon1" id="atividade-fisica-input">
-
+                <input type="text" class="form-control" placeholder="Atividade física: ... " aria-label="atividade-fisica" aria-describedby="basic-addon1" id="atividade-fisica-input">
+                <button class="btn btn-success mt-3" type="button" id="botao_envio">Enviar</button>
             </div>
-            <ul class="list-group list-group-flush p-2">
-                <li class="list-group-item">Item *
-                    <div class="position-absolute top-50 end-0 translate-middle-y ">
-                    <button class="btn btn-success " type="button">Concluido</button>
-                     <button class="btn btn-danger" type="button">Excluir</button>
-                     </div>
-                </li>
+            <ul class="list-group list-group-flush p-2 ">
+                <li class="list-group-item d-flex justify-content-between">Item *
+                <div>
+                    <button class="btn btn-success" stylezz type="button">Concluido</button>
+                    <button class="btn btn-danger" type="button">Excluir</button> 
+                </div>
+                     </li>
+                
+                
+            
+                     
+               
             </ul>
             
             </div>
