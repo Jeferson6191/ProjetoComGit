@@ -30,6 +30,6 @@ let template = {
             </div>
         </section>
     `,
-    guia_de_aprendizado:`guia de aprendizado
+    guia_de_aprendizado:`guia de aprendizado 
     `
 }
