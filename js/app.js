@@ -74,8 +74,8 @@ indentificador_guia = localStorage.getItem('localizador_guia');
     case "gerenciador_treinos":
             main.innerHTML = template.gerenciador_de_treinos;
             document.querySelector(".navbar-text").innerHTML= `Guia - <strong>Gerenciador de treinos</strong>`
-            
             atividade_fisica()
+            
             
         break;
 
@@ -196,9 +196,7 @@ const botoes = document.querySelectorAll(".list-group button");
 //remover
 indentificar_botões()
 function indentificar_botões() {
-
-
-
+const botoes= document.querySelectorAll(".list-group button");
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         
