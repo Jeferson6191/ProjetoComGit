@@ -1,5 +1,3 @@
-function script() {
-    
 
 //navbar
 let body = document.querySelector("body");
@@ -99,8 +97,8 @@ document.querySelector(".guia-btn").addEventListener("click", ()=>{
     localStorage.setItem("localizador_guia", "guia_aprendizado")
     seletor_guia();script()
 })
-}
-script()
+
+
 
 
 //sistema do guia de atividades fisíca
