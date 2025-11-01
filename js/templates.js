@@ -14,8 +14,8 @@ let template = {
     `,
     gerenciador_de_treinos:`
             <section >
-
-            <div class="card mx-auto p-2 m-5" style="width: 80%;">
+            
+            <div class="card mx-auto p-2 m-5" style="width: 80% ;">
             <div class="card-body">
                 <h1 class="card-title">Guia de atividades diarias</h1>
                 <p class="card-text">digite aqui suas atividade que você ira fazer no dia.</p>
@@ -27,7 +27,7 @@ let template = {
                 
             </ul>
             
-            </div>
+
         </section>
     `,
     guia_de_aprendizado:`guia de aprendizado 
