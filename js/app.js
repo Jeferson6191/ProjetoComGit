@@ -166,7 +166,13 @@ for (let index = 0; index <= contagem; index++) {
 
             }
 }
-
+//se apertar enter executar a funcao do click
+atividade_fisica_input.addEventListener("keydown", (event) => {
+    
+    if (event.key === "Enter") {
+         botao_envio.click(); // simula o clique no botão
+    }
+});
 // função para se clicar no botão de enviar exercicio
 botao_envio.addEventListener("click", ()=>{
     // verificando se o valor no input é maior que 3
