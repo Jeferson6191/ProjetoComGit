@@ -214,7 +214,7 @@ botao_envio.addEventListener("click", ()=>{
         // alert(contagem)
         //chamada de função para diversas validações
         indentificar_botões()
-     
+        atividade_fisica_input.value=""
 })
 const botoes = document.querySelectorAll(".list-group button");
 //remover
