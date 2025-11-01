@@ -45,3 +45,9 @@ body {
 .tema-claro .card{
     box-shadow: 0 0 15px gray;
 }
+
+.concluido {
+    border: 1px solid green !important;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
