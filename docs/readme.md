@@ -30,7 +30,7 @@
 - <a href="https://www.javascript.com/">JavaScript</a>
 - <a href="https://html.com/">HTML</a>
 - <a href="https://www.w3.org/Style/CSS/">CSS</a>
-
+- <a href="https://git-scm.com/">git</a>
 
 ## ⚙️ Instruções de acesso
 
