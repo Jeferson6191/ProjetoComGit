@@ -19,10 +19,10 @@
 
 ## 🔭 Visão Geral
 
-    Este é um projeto de gerenciamento de treinos.
+    <p>Este é um projeto de gerenciamento de treinos.
     Você pode colocar tarefas e seleciona-las quando feito. O site é um Single Page Application, pensado para favorecer pessoas com um internet não muito boa, e interamente desenvolvido pensando a facilidade de acesso ao usurio.
     No site também foi muito utilizado o sistema de Local Storage do navegador para salvar as tarefas do usuario.
-    Todas as alterações são salvas no site.
+    Todas as alterações são salvas no site.</p>
 
 ## 💻 Tecnologias
 
@@ -30,7 +30,7 @@
 - <a href="https://www.javascript.com/">JavaScript</a>
 - <a href="https://html.com/">HTML</a>
 - <a href="https://www.w3.org/Style/CSS/">CSS</a>
-- <a href="https://git-scm.com/">git</a>
+- <a href="https://git-scm.com/">Git</a>
 
 ## ⚙️ Instruções de acesso
 
