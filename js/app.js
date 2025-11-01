@@ -1,5 +1,6 @@
 
 script()
+
 function script() {
 
 
@@ -145,14 +146,21 @@ for (let index = 0; index <= contagem; index++) {
     if (localStorage.getItem(`index${index}`) != null) {
 
         lista_p_inserir.innerHTML+=`
-                     <li class="list-group-item d-flex justify-content-between index${String(index)}">${String(localStorage.getItem(`index${index}`))}
+
+                     <li class="list-group-item d-flex justify-content-between index${String(index)}"><p class="text-break">${String(localStorage.getItem(`index${index}`))}</p>
+                
                 <div>
-                    <button class="btn btn-success" stylezz type="button">Concluido</button>
+                   <button class="btn btn-success index${String(index)}btnconcluido" type="button">Concluido</button>
                     <button class="btn btn-danger index${String(index)}btndelete" type="button">Excluir</button> 
                 </div>
                      </li>`
+                    
     }
-    
+    if (localStorage.getItem(`concluido${index}`)) {
+
+                document.querySelector(`.index${String(index)}`).classList.add("concluido")
+
+            }
 }
 
     
@@ -168,7 +176,7 @@ botao_envio.addEventListener("click", ()=>{
         lista_p_inserir.innerHTML+=`
                      <li class="list-group-item d-flex justify-content-between index${String(contagem)}">${String(exercicios_agora)}
                 <div>
-                    <button class="btn btn-success" stylezz type="button">Concluido</button>
+                    <button class="btn btn-success index${String(contagem)}btnconcluido" type="button">Concluido</button>
                     <button class="btn btn-danger index${String(contagem)}btndelete" type="button">Excluir</button> 
                 </div>
                      </li>`
@@ -205,9 +213,23 @@ botoes.forEach(botao => {
                 // alert(`click delete index${String(index)}btndelete`)
                 document.querySelector(`.index${String(index)}`).outerHTML=""
                 localStorage.removeItem(`index${String(index)}`)
+                
+            }if (botao.classList.contains(`index${String(index)}btnconcluido`) == true) {
+                if (localStorage.getItem(`concluido${index}`)) {
+
+                document.querySelector(`.index${String(index)}`).classList.remove("concluido")
+
+                localStorage.removeItem(`concluido${String(index)}`)
+
+            }else{
+                
+                document.querySelector(`.index${String(index)}`).classList.add("concluido")
+                localStorage.setItem(`concluido${String(index)}`, `concluido${String(index)}`)
+            }
+                
 
             }
-            
+        
         }
         
     });
