@@ -1,4 +1,4 @@
-<h1 align="center">Gerenciador de tarefas</h1>
+<h1 align="center">Gerenciador de treinos detalhado</h1>
 
 
 
@@ -19,9 +19,10 @@
 
 ## 🔭 Visão Geral
 
-    Este é um projeto de gerenciamento de tarefa.
-    Você pode colocar tarefas e seleciona-las quando feito. O site é um Single Page Application, pensado para favorecer pessoas com um internet não muito boa.
-    No site também foi muito utilizado o sistema de chache do navegador para salvar as tarefas do usuario.
+    Este é um projeto de gerenciamento de treinos.
+    Você pode colocar tarefas e seleciona-las quando feito. O site é um Single Page Application, pensado para favorecer pessoas com um internet não muito boa, e interamente desenvolvido pensando a facilidade de acesso ao usurio.
+    No site também foi muito utilizado o sistema de Local Storage do navegador para salvar as tarefas do usuario.
+    Todas as alterações são salvas no site.
 
 ## 💻 Tecnologias
 
